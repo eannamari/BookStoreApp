@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Book Store App</string>
+
+    <string name="bookline">Bookline</string>
+    <string name="alexandra">Alexandra Novel</string>
+    <string name="libri">Libri</string>
+    <string name="other">Other</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the editor -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/editable_label"
+            android:text="Product name:" />
+
+        <EditText
+            android:id="@+id/edit_product_name"
+            style="@style/editText_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/editable_label"
+            android:text="Price:" />
+
+        <EditText
+            android:id="@+id/edit_book_price"
+            style="@style/editText_style"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/editable_label"
+            android:text="Quantity:" />
+
+        <LinearLayout style="@style/editText_style">
+
+            <Button
+                android:id="@+id/decrease"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/edit_quantity"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/increase"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/editable_label"
+            android:text="Supplier:" />
+
+        <Spinner
+            android:id="@+id/supplier_name"
+            style="@style/editText_style"
+            android:layout_gravity="center"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/editable_label"
+            android:text="Supplier phone:" />
+
+        <EditText
+            android:id="@+id/supplier_phone"
+            style="@style/editText_style"
+            android:inputType="phone" />
+
+    </LinearLayout>
+</LinearLayout>
